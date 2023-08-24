@@ -10,7 +10,7 @@ import { BlogPost } from 'src/app/models/post';
   imports: [MarkdownComponent, NgIf, AsyncPipe],
   template: `
     <div *ngIf="post$ | async as post">
-      <h3>{{ post.attributes.title }}</h3>
+      <h2>{{ post.attributes.title }}</h2>
 
       <analog-markdown [content]="post.content" />
     </div>
